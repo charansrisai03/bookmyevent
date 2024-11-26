@@ -24,7 +24,7 @@ const OngoingEvents = () => {
   const getAllEvents = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/event/get-events"
+        "http://localhost:3001/api/v1/event/get-events"
       );
       if (data?.success) {
         toast.success("Events were fetched");

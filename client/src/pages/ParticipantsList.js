@@ -10,7 +10,7 @@ const ParticipantsList = () => {
     const [users,setUsers] = useState()
     const getUsers = async() => {
         try{
-            const {data} = await axios.get(`http://localhost:8080/api/v1/event/geteventusers/${params.eid}`);
+            const {data} = await axios.get(`http://localhost:3001/api/v1/event/geteventusers/${params.eid}`);
             if(data?.success)
             {
                 setUsers(data?.eventusers)

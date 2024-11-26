@@ -21,7 +21,7 @@ const AboutPage = () => {
           <div className="card m-2" style={{width:18+'em'}}>
               {/* <img className="card-img-top" src="" alt="Card image cap"/> */}
               <div className="card-body">
-                <h5 className="card-title">Akhil</h5>
+                <h5 className="card-title">Chokshi</h5>
                 <p className="card-text">Full stack developer</p>              
               </div>
           </div>
@@ -29,20 +29,6 @@ const AboutPage = () => {
               {/* <img className="card-img-top" src="" alt="Card image cap"/> */}
               <div className="card-body">
                 <h5 className="card-title">Charan</h5>
-                <p className="card-text">Full stack developer</p>              
-              </div>
-          </div>
-          <div className="card m-2" style={{width:18+'em'}}>
-              {/* <img className="card-img-top" src="" alt="Card image cap"/> */}
-              <div className="card-body">
-                <h5 className="card-title">Nikhil</h5>
-                <p className="card-text">Full stack developer</p>              
-              </div>
-          </div>
-          <div className="card m-2" style={{width:18+'em'}}>
-              {/* <img className="card-img-top" src={img1} alt="Card image cap"/> */}
-              <div className="card-body">
-                <h5 className="card-title">Raghunadh</h5>
                 <p className="card-text">Full stack developer</p>              
               </div>
           </div>

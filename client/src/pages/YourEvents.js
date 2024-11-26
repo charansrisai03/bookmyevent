@@ -13,7 +13,7 @@ const YourEvents = () => {
   const getYourEvents = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/event/get-hostedEvents"
+        "http://localhost:3001/api/v1/event/get-hostedEvents"
       );
       if (data?.success) {
         setEvents(data?.events);

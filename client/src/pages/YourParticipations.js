@@ -11,7 +11,7 @@ const YourParticipations = () => {
   const getPEvents = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/auth/your-participations",
+        "http://localhost:3001/api/v1/auth/your-participations",
         {
           headers: {
             Authorization: auth?.token,
@@ -31,7 +31,7 @@ const YourParticipations = () => {
 
   const removeHandler = async (title) => {
     try{
-      const {data} = await axios.delete(`http://localhost:8080/api/v1/event/remove-event/${title}`,        {
+      const {data} = await axios.delete(`http://localhost:3001/api/v1/event/remove-event/${title}`,        {
         headers: {
           Authorization: auth?.token,
         },

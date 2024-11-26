@@ -29,7 +29,7 @@ const EventDetails = () => {
   const getEvent = async() => {
     try{
 
-      const {data} = await axios.get(`http://localhost:8080/api/v1/event/getOneEvent/${params.title}`)
+      const {data} = await axios.get(`http://localhost:3001/api/v1/event/getOneEvent/${params.title}`)
       if(data?.success)
       {
          toast.success('events were fetched')
@@ -54,7 +54,7 @@ const EventDetails = () => {
   const participate = async() =>{
     try{
       const dat = localStorage.getItem('auth')
-        const {data} = await axios.put(`http://localhost:8080/api/v1/auth/participate/${params.eid}`)
+        const {data} = await axios.put(`http://localhost:3001/api/v1/auth/participate/${params.eid}`)
 
         if(data?.success)
         {
