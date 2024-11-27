@@ -7,7 +7,8 @@ pipeline{
     stages{
         stage('Clone Git'){
             steps{
-                git 'https://github.com/charansrisai03/bookmyevent.git'
+                git branch: 'chokshi',
+                url: 'https://github.com/charansrisai03/bookmyevent.git'
             }
         }
 //         stage('Testing'){
