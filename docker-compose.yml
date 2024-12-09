@@ -9,6 +9,7 @@ services:
       - backend
     networks:
       - app_network
+      - elk_network
 
   backend:
     image: charansrisai/backend:latest
@@ -18,8 +19,11 @@ services:
     restart: always  
     ports:
       - '3001:3001'
+    volumes:
+      - ./backend/logs:/logs
     networks:
       - app_network
+      - elk_network
     environment:
       - JWT_SECRET=SDNCN23423TN394UFKND
       - MONGO_URL=mongodb+srv://charan03:030904@clusterecoverse.xxoya0d.mongodb.net/ecoverse
@@ -29,3 +33,5 @@ services:
 networks:
   app_network:
     driver: bridge
+  elk_network:  # Add the shared network
+    external: true
