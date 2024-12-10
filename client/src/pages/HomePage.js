@@ -25,7 +25,7 @@ const HomePage = () => {
               <div class="card" id="secondimage" style={{width: "20rem",height:"20rem"}}>
                   <img src="./yourparticipations.jpg" class="card-img-top" alt="..." style={{width: "20rem",height:"15rem"}}/>
                   <div class="card-body">
-                    <h5 class="card-title" id="cardtitle">Your PARTICIPATIONS</h5>
+                    <h5 class="card-title" id="cardtitle">Your PARTICIPIONS</h5>
                     <p class="card-text" id="carddesc">Check all the events you participated</p>
                   </div>
                 </div>
