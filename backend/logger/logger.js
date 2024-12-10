@@ -1,34 +1,22 @@
 import winston from "winston";
-import { LogstashTransport } from "winston-logstash-transport";
+const { combine, timestamp, json,printf } = winston.format;
 
-const { combine, timestamp, json, printf } = winston.format;
-
-// Custom log format
 const myFormat = printf(({ level, message, timestamp }) => {
-  return `[${timestamp}] [${level.toUpperCase()}] ${message}`;
-});
+    return `[${timestamp}] [${level}] [${message}]`;
+  });
 
-// Create the logger instance
+
 const logger = winston.createLogger({
-  level: "info", // Default log level
+  level: process.env.LOG_LEVEL || 'info',
   format: combine(
-    timestamp({ format: "YYYY-MM-DD HH:mm:ss" }), // Timestamp format
-    json(), // JSON format for structured logs
-    myFormat // Custom formatted output
+    winston.format.colorize(),
+    timestamp({format: "HH:mm:ss"}),
+    myFormat
   ),
   transports: [
-    // Logs to console
     new winston.transports.Console(),
-    // Logs to a file
-    new winston.transports.File({ filename: "logs/server.log" }),
-    // Logstash transport (TCP connection to Logstash
+    new winston.transports.File({filename: 'logs/server.log'})
   ],
 });
 
-// Handle logger errors
-logger.on("error", (err) => {
-  console.error("Logger encountered an error:", err.message);
-});
-
-// Export the logger
 export default logger;
