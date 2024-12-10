@@ -161,6 +161,7 @@ export const getEventUsersController = async (req, res) => {
         }
 
         const eventUsers = event.users;
+        console.log(eventUsers);
 
         logger.info('Successfully fetched users for event', { eventId: eid, userCount: eventUsers.length });
         res.status(200).send({
