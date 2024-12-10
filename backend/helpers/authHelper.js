@@ -1,5 +1,5 @@
 import bcrypt from 'bcryptjs';
-import logger from '../logger/logger';
+import logger from '../logger/logger.js';
 
 export const hashPassword = async (password) => {
     try {
