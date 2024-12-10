@@ -1,0 +1,78 @@
+{"email":"bob@ew.com","level":"info","message":"Login attempt","timestamp":"2024-12-10 16:06:28"}
+{"level":"info","message":"Passwords match","timestamp":"2024-12-10 16:06:28"}
+{"email":"bob@ew.com","level":"info","message":"User logged in successfully","timestamp":"2024-12-10 16:06:28","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Fetching all events","timestamp":"2024-12-10 16:06:33"}
+{"eventCount":18,"level":"info","message":"Successfully fetched all events","timestamp":"2024-12-10 16:06:33"}
+{"level":"info","message":"Fetching event by title","timestamp":"2024-12-10 16:06:36","title":"code play"}
+{"eventId":"675814b4a0ab0f149de31eef","level":"info","message":"Successfully fetched event","timestamp":"2024-12-10 16:06:36"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:06:37"}
+{"eventId":"675814b4a0ab0f149de31eef","level":"info","message":"Participation request","timestamp":"2024-12-10 16:06:37","userId":"672a1acd97aba9d52cec5c38"}
+{"eventId":"675814b4a0ab0f149de31eef","level":"info","message":"User registered for event successfully","timestamp":"2024-12-10 16:06:38","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:06:41"}
+{"level":"info","message":"Fetching participated events","timestamp":"2024-12-10 16:06:41","userId":"672a1acd97aba9d52cec5c38"}
+{"eventCount":5,"level":"info","message":"Fetched participated events successfully","timestamp":"2024-12-10 16:06:41","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:06:48"}
+{"level":"info","message":"Removing event from user","timestamp":"2024-12-10 16:06:48","title":"concert","userId":"672a1acd97aba9d52cec5c38"}
+{"eventId":"6758125bdaeba5740fa2ecc6","level":"info","message":"Event removed from user successfully","timestamp":"2024-12-10 16:06:49","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:06:49"}
+{"level":"info","message":"Fetching participated events","timestamp":"2024-12-10 16:06:49","userId":"672a1acd97aba9d52cec5c38"}
+{"eventCount":4,"level":"info","message":"Fetched participated events successfully","timestamp":"2024-12-10 16:06:49","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:06:53"}
+{"level":"info","message":"Fetching hosted events for user","timestamp":"2024-12-10 16:06:53","userId":"672a1acd97aba9d52cec5c38"}
+{"eventCount":3,"level":"info","message":"Successfully fetched hosted events","timestamp":"2024-12-10 16:06:53","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:06:55"}
+{"eventId":"67574a8970564be79f9f153a","level":"info","message":"Fetching users for event","timestamp":"2024-12-10 16:06:55"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:07:52"}
+{"eventId":"67586758e46cee601f6e58a5","level":"info","message":"Event created successfully","organiser":"672a1acd97aba9d52cec5c38","timestamp":"2024-12-10 16:07:52"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:07:54"}
+{"level":"info","message":"Fetching hosted events for user","timestamp":"2024-12-10 16:07:54","userId":"672a1acd97aba9d52cec5c38"}
+{"eventCount":4,"level":"info","message":"Successfully fetched hosted events","timestamp":"2024-12-10 16:07:54","userId":"672a1acd97aba9d52cec5c38"}
+{"email":"ch@er.com","level":"info","message":"Login attempt","timestamp":"2024-12-10 16:08:05"}
+{"level":"info","message":"Passwords match","timestamp":"2024-12-10 16:08:05"}
+{"email":"ch@er.com","level":"info","message":"User logged in successfully","timestamp":"2024-12-10 16:08:05","userId":"6752b8aaef633efe338c946a"}
+{"level":"info","message":"Fetching all events","timestamp":"2024-12-10 16:08:06"}
+{"eventCount":19,"level":"info","message":"Successfully fetched all events","timestamp":"2024-12-10 16:08:06"}
+{"level":"info","message":"Fetching event by title","timestamp":"2024-12-10 16:08:08","title":"movie night"}
+{"eventId":"67586758e46cee601f6e58a5","level":"info","message":"Successfully fetched event","timestamp":"2024-12-10 16:08:08"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:08:09"}
+{"eventId":"67586758e46cee601f6e58a5","level":"info","message":"Participation request","timestamp":"2024-12-10 16:08:09","userId":"6752b8aaef633efe338c946a"}
+{"eventId":"67586758e46cee601f6e58a5","level":"info","message":"User registered for event successfully","timestamp":"2024-12-10 16:08:10","userId":"6752b8aaef633efe338c946a"}
+{"email":"bob@ew.com","level":"info","message":"Login attempt","timestamp":"2024-12-10 16:08:16"}
+{"level":"info","message":"Passwords match","timestamp":"2024-12-10 16:08:16"}
+{"email":"bob@ew.com","level":"info","message":"User logged in successfully","timestamp":"2024-12-10 16:08:16","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:08:18"}
+{"level":"info","message":"Fetching hosted events for user","timestamp":"2024-12-10 16:08:18","userId":"672a1acd97aba9d52cec5c38"}
+{"eventCount":4,"level":"info","message":"Successfully fetched hosted events","timestamp":"2024-12-10 16:08:18","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:08:19"}
+{"eventId":"67586758e46cee601f6e58a5","level":"info","message":"Fetching users for event","timestamp":"2024-12-10 16:08:19"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:08:32"}
+{"level":"info","message":"Fetching participated events","timestamp":"2024-12-10 16:08:32","userId":"672a1acd97aba9d52cec5c38"}
+{"eventCount":4,"level":"info","message":"Fetched participated events successfully","timestamp":"2024-12-10 16:08:32","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:08:34"}
+{"level":"info","message":"Removing event from user","timestamp":"2024-12-10 16:08:34","title":"hii","userId":"672a1acd97aba9d52cec5c38"}
+{"eventId":"67535a4e5754592beca62acc","level":"info","message":"Event removed from user successfully","timestamp":"2024-12-10 16:08:34","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:08:34"}
+{"level":"info","message":"Fetching participated events","timestamp":"2024-12-10 16:08:34","userId":"672a1acd97aba9d52cec5c38"}
+{"eventCount":3,"level":"info","message":"Fetched participated events successfully","timestamp":"2024-12-10 16:08:34","userId":"672a1acd97aba9d52cec5c38"}
+{"level":"info","message":"Password hashed successfully","timestamp":"2024-12-10 16:09:07"}
+{"email":"na@ni.com","level":"info","message":"User registered successfully","timestamp":"2024-12-10 16:09:07","userId":"675867a3e46cee601f6e58ba"}
+{"email":"na@ni.com","level":"info","message":"Login attempt","timestamp":"2024-12-10 16:09:17"}
+{"level":"info","message":"Passwords match","timestamp":"2024-12-10 16:09:17"}
+{"email":"na@ni.com","level":"info","message":"User logged in successfully","timestamp":"2024-12-10 16:09:17","userId":"675867a3e46cee601f6e58ba"}
+{"level":"info","message":"Fetching all events","timestamp":"2024-12-10 16:09:19"}
+{"eventCount":19,"level":"info","message":"Successfully fetched all events","timestamp":"2024-12-10 16:09:19"}
+{"level":"info","message":"Fetching event by title","timestamp":"2024-12-10 16:09:21","title":"code play"}
+{"eventId":"675814b4a0ab0f149de31eef","level":"info","message":"Successfully fetched event","timestamp":"2024-12-10 16:09:21"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:09:22"}
+{"eventId":"675814b4a0ab0f149de31eef","level":"info","message":"Participation request","timestamp":"2024-12-10 16:09:22","userId":"675867a3e46cee601f6e58ba"}
+{"eventId":"675814b4a0ab0f149de31eef","level":"info","message":"User registered for event successfully","timestamp":"2024-12-10 16:09:23","userId":"675867a3e46cee601f6e58ba"}
+{"level":"info","message":"Fetching all events","timestamp":"2024-12-10 16:09:24"}
+{"eventCount":19,"level":"info","message":"Successfully fetched all events","timestamp":"2024-12-10 16:09:24"}
+{"level":"info","message":"Fetching event by title","timestamp":"2024-12-10 16:09:26","title":"anna vastunndu"}
+{"eventId":"675832621fdd3f7118bf1028","level":"info","message":"Successfully fetched event","timestamp":"2024-12-10 16:09:26"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:09:27"}
+{"eventId":"675832621fdd3f7118bf1028","level":"info","message":"Participation request","timestamp":"2024-12-10 16:09:27","userId":"675867a3e46cee601f6e58ba"}
+{"eventId":"675832621fdd3f7118bf1028","level":"info","message":"User registered for event successfully","timestamp":"2024-12-10 16:09:28","userId":"675867a3e46cee601f6e58ba"}
+{"level":"info","message":"Token verified successfully","timestamp":"2024-12-10 16:09:31"}
+{"level":"info","message":"Fetching participated events","timestamp":"2024-12-10 16:09:31","userId":"675867a3e46cee601f6e58ba"}
+{"eventCount":2,"level":"info","message":"Fetched participated events successfully","timestamp":"2024-12-10 16:09:31","userId":"675867a3e46cee601f6e58ba"}
