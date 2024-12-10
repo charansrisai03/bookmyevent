@@ -4,17 +4,16 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 const ParticipantsList = () => {
-
     // Initialize the backend URL based on the environment
     const backendUrl = window.location.hostname === 'localhost' ? 
-    'http://localhost:3001' : 
-    'http://192.168.49.2:30002'; 
+        'http://localhost:3001' : 
+        'http://192.168.49.2:30002'; 
 
     // Access the event ID from the URL params
     const params = useParams();
     
     // State to store the fetched users
-    const [users, setUsers] = useState([]);
+    const [users, setUsers] = useState([]); // Initialize as an empty array
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -44,6 +43,7 @@ const ParticipantsList = () => {
         getUsers();
     }, []); // Empty dependency array ensures it runs only once when the component mounts
 
+    // Render loading, error, or user list
     return (
         <Layout>
             <h3>Participants List</h3>
@@ -62,7 +62,7 @@ const ParticipantsList = () => {
                     </thead>
                     <tbody>
                         {
-                            users.length > 0 ? (
+                            users && users.length > 0 ? (
                                 users.map((u, i) => (
                                     <tr key={i}>
                                         <td>{i + 1}</td>
