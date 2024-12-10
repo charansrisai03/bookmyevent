@@ -26,7 +26,7 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <div>
-              <p className='title'>Ecoverse</p>
+              <p className='title'>Book my event</p>
             </div>
             <div className="d-flex justify-content-end me-3" id="navbarSupportedContent">
               <ul className="navbar-nav ml-auto">
