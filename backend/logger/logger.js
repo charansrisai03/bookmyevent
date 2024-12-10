@@ -21,13 +21,7 @@ const logger = winston.createLogger({
     new winston.transports.Console(),
     // Logs to a file
     new winston.transports.File({ filename: "logs/server.log" }),
-    // Logstash transport (TCP connection to Logstash)
-    new LogstashTransport({
-      host: "logstash", // Replace with your Logstash host (e.g., "localhost" or "logstash")
-      port: 50000, // Replace with your Logstash port
-      format: json(), // Ensure Logstash gets structured JSON logs
-      retryInterval: 5000, // Retry connection every 5 seconds on failure
-    }),
+    // Logstash transport (TCP connection to Logstash
   ],
 });
 

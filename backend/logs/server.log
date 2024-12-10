@@ -1,10 +1,14 @@
-[2024-12-09 19:57:39] [INFO] Fetching event by title
-[2024-12-09 19:57:39] [INFO] Successfully fetched event
-[2024-12-09 19:57:43] [INFO] Fetching all events
-[2024-12-09 19:57:43] [INFO] Successfully fetched all events
-[2024-12-09 19:57:44] [INFO] Fetching event by title
-[2024-12-09 19:57:44] [INFO] Successfully fetched event
-[2024-12-09 19:57:50] [INFO] Participation request
-[2024-12-09 19:57:50] [INFO] User already registered for event
-[2024-12-09 19:57:52] [INFO] Fetching participated events
-[2024-12-09 19:57:52] [INFO] Fetched participated events successfully
+[2024-12-09 19:57:39] [INFO] Fetching event by title[2024-12-10 06:00:38] [INFO] Fetching all events
+[2024-12-10 06:00:38] [INFO] Successfully fetched all events
+[2024-12-10 06:00:44] [INFO] Fetching event by title
+[2024-12-10 06:00:44] [INFO] Successfully fetched event
+[2024-12-10 06:00:45] [INFO] Participation request
+[2024-12-10 06:00:46] [INFO] User already registered for event
+[2024-12-10 06:00:58] [INFO] Login attempt
+[2024-12-10 06:00:59] [INFO] User logged in successfully
+[2024-12-10 06:00:59] [INFO] Fetching all events
+[2024-12-10 06:00:59] [INFO] Successfully fetched all events
+[2024-12-10 06:01:02] [INFO] Fetching event by title
+[2024-12-10 06:01:02] [INFO] Successfully fetched event
+[2024-12-10 06:01:08] [INFO] Fetching all events
+[2024-12-10 06:01:08] [INFO] Successfully fetched all events
