@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <Layout>
         <div className="hp">
-          <h2 id="title">Want to be an environmentalist??</h2>
+          <h2 id="title">Want to book any event or host an event??</h2>
           <h4 id="subtitle">Sign Up for free and join our community!!</h4>
           <div class="row">
             <div class="col">
