@@ -3,9 +3,7 @@ import logger from '../logger/logger.js';
 
 export const hashPassword = async (password) => {
     try {
-        logger.info('hashPassword function called'); // Logging function call
         const saltRounds = 10;
-        logger.info('Starting the password hashing process'); // Logging process start
         const hashedPassword = await bcrypt.hash(password, saltRounds);
         logger.info('Password hashed successfully'); // Logging success
         return hashedPassword;
@@ -16,9 +14,7 @@ export const hashPassword = async (password) => {
 };
 
 export const comparePassword = async (password, hashedPassword) => {
-    logger.info('comparePassword function called'); // Logging function call
     try {
-        logger.info('Comparing password with hashed password'); // Logging comparison attempt
         const isMatch = await bcrypt.compare(password, hashedPassword);
         if (isMatch) {
             logger.info('Passwords match'); // Logging success when passwords match
@@ -31,3 +27,4 @@ export const comparePassword = async (password, hashedPassword) => {
         throw new Error('Password comparison failed');
     }
 };
+

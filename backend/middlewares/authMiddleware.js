@@ -5,8 +5,6 @@ import logger from '../logger/logger.js';
 
 export const requireSignIn = async (req, res, next) => {
     try {
-        logger.info('requireSignIn middleware called'); // Log function call
-
         const token = req.headers.authorization;
         if (!token) {
             logger.warn('Authorization token not found in headers'); // Log when token is missing
@@ -16,7 +14,6 @@ export const requireSignIn = async (req, res, next) => {
             });
         }
 
-        logger.info('Verifying token'); // Log before verifying token
         const decoded = JWT.verify(token, process.env.JWT_SECRET);
         req.user = decoded;
 
