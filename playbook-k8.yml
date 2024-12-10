@@ -12,7 +12,7 @@
 
     - name: Create Namespace
       kubernetes.core.k8s:
-        kubeconfig: /var/lib/jenkins/.kube/config
+        # kubeconfig: /var/lib/jenkins/.kube/config
         state: present
         definition:
           apiVersion: v1
@@ -59,6 +59,17 @@
       kubernetes.core.k8s:
         state: present
         definition: "{{ lookup('file', './k8/mern-ingress.yaml') | from_yaml }}"
+    
+    - name: Create Backend HPA
+      kubernetes.core.k8s:
+        state: present
+        definition: "{{ lookup('file', './k8/backend-hpa.yaml') | from_yaml }}"
+
+    - name: Create Frontend HPA
+      kubernetes.core.k8s:
+        state: present
+        definition: "{{ lookup('file', './k8/frontend-hpa.yaml') | from_yaml }}"
+
 
     - name: Ensure Frontend Deployment uses the latest image
       kubernetes.core.k8s:
