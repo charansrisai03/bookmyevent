@@ -12,3 +12,11 @@
 [2024-12-10 06:01:02] [INFO] Successfully fetched event
 [2024-12-10 06:01:08] [INFO] Fetching all events
 [2024-12-10 06:01:08] [INFO] Successfully fetched all events
+[2024-12-10 06:08:06] [INFO] Fetching all events
+[2024-12-10 06:08:06] [INFO] Successfully fetched all events
+[2024-12-10 06:08:12] [INFO] Fetching event by title
+[2024-12-10 06:08:12] [INFO] Successfully fetched event
+[2024-12-10 06:08:18] [INFO] Participation request
+[2024-12-10 06:08:19] [INFO] User registered for event successfully
+[2024-12-10 06:08:28] [INFO] Fetching participated events
+[2024-12-10 06:08:28] [INFO] Fetched participated events successfully
