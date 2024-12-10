@@ -27,6 +27,8 @@ const ParticipantsList = () => {
     useEffect(()=>{
         getUsers();
     },[])
+
+    console.log('Current Users State:', users);
   return (
     <Layout>
         <h3>Paricpants List</h3>
