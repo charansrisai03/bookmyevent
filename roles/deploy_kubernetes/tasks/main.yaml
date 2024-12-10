@@ -1,0 +1,93 @@
+---
+- name: Install pre-requisites
+  pip:
+    name:
+      - openshift
+      - pyyaml
+      - kubernetes 
+
+- name: Debug namespace variable
+  debug:
+    var: namespace
+
+- name: Create Namespace
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: "{{ namespace }}"
+
+- name: Apply Secrets
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('file', 'files/mern-backend-secret.yaml') | from_yaml }}"
+
+- name: Create Config Map
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('file', 'files/frontend-configmap.yaml') | from_yaml }}" 
+
+- name: Create Frontend Deployment
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('file', 'files/frontend-deployment.yaml') | from_yaml }}"
+  args:
+    force: yes
+
+- name: Create Frontend Service
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('file', 'files/frontend-service.yaml') | from_yaml }}"
+
+- name: Create Backend Deployment
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('file', 'files/backend-deployment.yaml') | from_yaml }}"
+  args:
+    force: yes
+
+- name: Create Backend Service
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('file', 'files/backend-service.yaml') | from_yaml }}"
+
+- name: Create Backend HPA
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('file', 'files/backend-hpa.yaml') | from_yaml }}"
+
+- name: Create Frontend HPA
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('file', 'files/frontend-hpa.yaml') | from_yaml }}"
+
+- name: Create Ingress
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('file', 'files/mern-ingress.yaml') | from_yaml }}"
+
+- name: Verify Frontend Deployment is running
+  kubernetes.core.k8s_info:
+    api_version: apps/v1
+    kind: Deployment
+    name: frontend-deployment
+    namespace: "{{ namespace }}"
+  register: frontend_deployment_status
+
+- name: Debug Frontend Deployment Status
+  debug:
+    var: frontend_deployment_status.resources[0].status
+
+- name: Verify Backend Deployment is running
+  kubernetes.core.k8s_info:
+    api_version: apps/v1
+    kind: Deployment
+    name: backend-deployment
+    namespace: "{{ namespace }}"
+  register: backend_deployment_status
+
+- name: Debug Backend Deployment Status
+  debug:
+    var: backend_deployment_status.resources[0].status
