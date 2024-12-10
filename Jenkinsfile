@@ -39,7 +39,7 @@ pipeline {
         stage('Ansible Deployment') {
             steps {
                 script { 
-                    sh 'ansible-playbook playbook-k8r.yml -i inventory-k8'
+                    sh 'ansible-playbook playbook.yml -i inventory'
                 }
             }
         }

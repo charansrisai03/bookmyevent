@@ -17,7 +17,8 @@ const ParticipantsList = () => {
             const {data} = await axios.get(`${backendUrl}/api/v1/event/geteventusers/${params.eid}`);
             if(data?.success)
             {
-                setUsers(data?.eventusers)
+                console.log(data);
+                setUsers(data?.eventUsers)
             }
         }
         catch(error)
@@ -27,6 +28,7 @@ const ParticipantsList = () => {
     useEffect(()=>{
         getUsers();
     },[])
+    console.log(users);
   return (
     <Layout>
         <h3>Paricpants List</h3>
