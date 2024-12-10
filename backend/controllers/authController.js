@@ -1,4 +1,4 @@
-import { comaprePassword, hashPassword } from "../helpers/authHelper.js";
+import { comparePassword, hashPassword } from "../helpers/authHelper.js";
 import userModel from "../models/userModel.js";
 import eventModel from "../models/eventModel.js";
 import JWT from 'jsonwebtoken';
@@ -69,7 +69,7 @@ export const loginController = async (req, res) => {
             });
         }
 
-        const match = await comaprePassword(password, user.password);
+        const match = await comparePassword(password, user.password);
         if (!match) {
             logger.warn('Login failed: Invalid password', { email });
             return res.status(400).send({
