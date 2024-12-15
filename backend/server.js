@@ -38,3 +38,5 @@ const port = 3001
 app.listen(port,() => {
     console.log(`Server is running on ${port}`.bgCyan.white)
 })
+
+export default app;
